@@ -1,0 +1,1171 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"love.graphics.reset"
+			],
+			[
+				"ro",
+				"love.graphics.rotate"
+			],
+			[
+				"Font",
+				"love.graphics.newFont"
+			],
+			[
+				"table",
+				"table.insert	(table, [pos,] value)"
+			],
+			[
+				"firewo",
+				"fireworks"
+			],
+			[
+				"attack",
+				"attackHero"
+			],
+			[
+				"for",
+				"fori	for i,v in ipairs()"
+			],
+			[
+				"sh",
+				"shadow"
+			],
+			[
+				"shadow",
+				"shadowCount"
+			],
+			[
+				"update",
+				"updateCanvas"
+			],
+			[
+				"weak",
+				"weakest"
+			],
+			[
+				"tab",
+				"table.insert	(table, [pos,] value)"
+			],
+			[
+				"fro",
+				"fori	for i,v in ipairs()"
+			],
+			[
+				"ids",
+				"love.mouse.isDown"
+			],
+			[
+				"newim",
+				"love.graphics.newImage"
+			],
+			[
+				"hover",
+				"hoverCard"
+			],
+			[
+				"print",
+				"love.graphics.print"
+			],
+			[
+				"random",
+				"love.math.random"
+			],
+			[
+				"setline",
+				"love.graphics.setLineWidth"
+			],
+			[
+				"img_",
+				"img_shield"
+			],
+			[
+				"shield",
+				"shield_max"
+			],
+			[
+				"circ",
+				"love.graphics.circle"
+			],
+			[
+				"newf",
+				"love.graphics.newFont"
+			],
+			[
+				"font",
+				"love.graphics.setFont"
+			],
+			[
+				"library",
+				"libraryData"
+			],
+			[
+				"mssage",
+				"message_id"
+			],
+			[
+				"CARD_",
+				"CARD_WIDTH"
+			],
+			[
+				"message",
+				"message_id"
+			],
+			[
+				"get_",
+				"get_position"
+			],
+			[
+				"ray_",
+				"ray_norm"
+			],
+			[
+				"ray_w",
+				"ray_w4"
+			],
+			[
+				"client_",
+				"client_port"
+			],
+			[
+				"getr",
+				"love.math.getRandomState"
+			],
+			[
+				"setr",
+				"love.math.setRandomState"
+			],
+			[
+				"seed",
+				"love.math.setRandomSeed"
+			],
+			[
+				"search",
+				"searchForCreate"
+			],
+			[
+				"check",
+				"checkSkull"
+			],
+			[
+				"os",
+				"os.time	([table])"
+			],
+			[
+				"rad",
+				"love.math.setRandomSeed"
+			],
+			[
+				"we",
+				"while	while cond"
+			],
+			[
+				"dr",
+				"draw()	cell"
+			],
+			[
+				"setcl",
+				"love.graphics.setColor"
+			],
+			[
+				"gr",
+				"love.graphics.rectangle"
+			],
+			[
+				"new",
+				"love.graphics.newParticleSystem"
+			],
+			[
+				"upa",
+				"unpack	(list [, i [, j]])"
+			],
+			[
+				"ta",
+				"table.insert	(table, [pos,] value)"
+			],
+			[
+				"drawf",
+				"drawFromOpDeck"
+			],
+			[
+				"selfk",
+				"selfkill10"
+			],
+			[
+				"onAtta",
+				"onAttack"
+			],
+			[
+				"alway",
+				"cardsAlways_update"
+			],
+			[
+				"string",
+				"string.find	(s, pattern [, init [, plain]])"
+			],
+			[
+				"get",
+				"love.graphics.getWidth"
+			],
+			[
+				"rand",
+				"love.math.random"
+			],
+			[
+				"up",
+				"unpack	(list [, i [, j]])"
+			],
+			[
+				"cost_",
+				"cost_lvl0"
+			],
+			[
+				"inter",
+				"interceptTab"
+			],
+			[
+				"minion",
+				"minionTab"
+			],
+			[
+				"abilit",
+				"abilities"
+			],
+			[
+				"upperT",
+				"upperTurnOver"
+			],
+			[
+				"mouse",
+				"love.mouse.getPosition"
+			],
+			[
+				"refill",
+				"refillCard"
+			],
+			[
+				"rado",
+				"love.math.random"
+			],
+			[
+				"push",
+				"love.graphics.push"
+			],
+			[
+				"getpo",
+				"love.mouse.getPosition"
+			],
+			[
+				"dra",
+				"love.graphics.draw"
+			],
+			[
+				"setc",
+				"love.graphics.setColor"
+			],
+			[
+				"set",
+				"love.graphics.setFont"
+			],
+			[
+				"can",
+				"love.graphics.newCanvas"
+			],
+			[
+				"pic_",
+				"pic_front"
+			],
+			[
+				"draw",
+				"love.graphics.draw"
+			],
+			[
+				"ve",
+				"vec4"
+			],
+			[
+				"vec",
+				"vec2"
+			],
+			[
+				"rect",
+				"love.graphics.rectangle"
+			],
+			[
+				"v",
+				"vec4"
+			],
+			[
+				"setsh",
+				"love.graphics.setShader"
+			],
+			[
+				"shad",
+				"love.graphics.newShader"
+			],
+			[
+				"to",
+				"tostring	(e)"
+			],
+			[
+				"setb",
+				"love.graphics.setBackgroundColor"
+			],
+			[
+				"fon",
+				"love.graphics.setFont"
+			],
+			[
+				"pri",
+				"love.graphics.print"
+			],
+			[
+				"func",
+				"function	function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 16,
+				"line_ending": "Windows",
+				"name": "main.lua"
+			}
+		},
+		{
+			"file": "engine/init.lua",
+			"settings":
+			{
+				"buffer_size": 359,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data.lua",
+			"settings":
+			{
+				"buffer_size": 1466,
+				"line_ending": "Windows",
+				"name": "data.lua"
+			}
+		},
+		{
+			"file": "engine/component/sprite.lua",
+			"settings":
+			{
+				"buffer_size": 1126,
+				"line_ending": "Windows",
+				"name": "sprite.lua"
+			}
+		},
+		{
+			"file": "engine/component/translate.lua",
+			"settings":
+			{
+				"buffer_size": 706,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "engine/component/gameobject.lua",
+			"settings":
+			{
+				"buffer_size": 1222,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "engine/component/scene.lua",
+			"settings":
+			{
+				"buffer_size": 881,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Lua Love/LuaLove.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Love2D"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build: Run"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 408.0
+	},
+	"console":
+	{
+		"height": 140.0,
+		"history":
+		[
+			"Love2D",
+			"love2d",
+			"build",
+			"Build",
+			"Love2D",
+			"Love2d",
+			"love2d",
+			"build"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/love2dproj/engine",
+		"/G/love2dproj/engine/engine",
+		"/G/love2dproj/engine/engine/component",
+		"/G/love2dproj/engine/engine/util"
+	],
+	"file_history":
+	[
+		"/G/love2dproj/engine/engine/component/translate.lua",
+		"/G/love2dproj/engine/util.lua",
+		"/G/love2dproj/engine/engine/component/core.lua",
+		"/G/love2dproj/engine/engine/component/gameobject.lua",
+		"/G/love2dproj/engine/engine/init.lua",
+		"/G/love2dproj/engine/engine/component/scene.lua",
+		"/G/love2dproj/space-war/lib/animation.lua",
+		"/G/love2dproj/engine/engine/component/shape.lua",
+		"/G/love2dproj/loveTCG/lib/gamestate.lua",
+		"/G/love2dproj/engine/engine/component/message.lua",
+		"/G/love2dproj/engine/engine/component/system.lua",
+		"/G/love2dproj/engine/engine/component/factory.lua",
+		"/G/love2dproj/engine/scenes/test_scene.lua",
+		"/C/Users/alex/Desktop/matrix.lua",
+		"/C/Users/alex/AppData/Roaming/LOVE/loveTCG/system",
+		"/G/love2dproj/loveTCG/lib/util.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/hero/zalasair.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/hero/raktabaan.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/hero/jesmai.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/hero/calipeth.lua",
+		"/G/love2dproj/loveTCG/cls/game.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/scrollofpetals.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/unstablerunes.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/gravecontract.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/lanternscroll.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/papervipers.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/engravedurn.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/summoningrift.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/wordofunmaking.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/empoweringseal.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/inscriptions/enchantedtreaty.lua",
+		"/G/love2dproj/loveTCG/cls/card.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/cantillation.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/hero/mogesh.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/hero/esra.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/hero/babarus.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/shrineofrebirth.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/songofspring.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/odashirsecho.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/haltingrebuke.lua",
+		"/G/love2dproj/loveTCG/cards/summon/conjuredargoreth.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/hero/orom.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/prosperity/tithe.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/slaves/stampede.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/rituals/ritualslaughter.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/herdingstones.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/sacredtortoise.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/serpentaltar.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/boarfetish.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/goetia/veilwarden.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/hero/captainviatrix.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/hero/cardinalpocci.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/hero/madamaline.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/hero/regentmarsh.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/hero/sofocatro.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/hero/ysadora.lua",
+		"/G/love2dproj/loveTCG/cards/metris/hero/birondelle.lua",
+		"/G/love2dproj/loveTCG/cards/metris/hero/loquori.lua",
+		"/G/love2dproj/loveTCG/cards/metris/hero/theodox.lua",
+		"/G/love2dproj/loveTCG/cards/metris/hero/valdorian.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/hero/liet.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/hero/tazin.lua",
+		"/G/love2dproj/loveTCG/cards/metris/hero/gretta.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/banishinggust.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/whisperedbarbs.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/poemofblight.lua",
+		"/G/love2dproj/loveTCG/cards/endazu/incantations/beholdtheveil.lua",
+		"/G/love2dproj/loveTCG/cards/metris/conspiracy/curryfavor.lua",
+		"/G/love2dproj/loveTCG/cards/metris/conspiracy/deceit.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/barrelbomb.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/satchelbomb.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/wagonbomb.lua",
+		"/G/love2dproj/loveTCG/cards/metris/conspiracy/misdirect.lua",
+		"/G/love2dproj/loveTCG/cards/metris/conspiracy/consolidate.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/ambush.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/belledonna.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/coupdegrace.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/arson.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/hemlock.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/arsenic.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/mayhem.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/infighting.lua",
+		"/G/love2dproj/loveTCG/cards/metris/murder/waylay.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/slaves/sacrificiallamb.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/slaves/scrivener.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/slaves/shepherd.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/cards/daramek/slaves/sacrificiallamb.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/coin/vespitolecoin.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/coin/deramekcoin.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/sacrificialdais.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/rituals/bloodlust.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/shepherdsgift.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/idols/Shepherdsgift.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/rituals/riteofbrood.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/rituals/riteofcambat.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/rituals/ceremonialdance.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/rituals/riteofpassage.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/slaves/lerpers.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/rituals/starvingmob.lua",
+		"/G/love2dproj/loveTCG/cards/daramek/slaves/ratcatcher.lua",
+		"/G/love2dproj/loveTCG/cls/effect.lua",
+		"/G/love2dproj/loveTCG/cls/shop.lua",
+		"/G/love2dproj/loveTCG/cls/info.lua",
+		"/G/love2dproj/loveTCG/lib/firework.lua",
+		"/G/love2dproj/loveTCG/cls/result.lua",
+		"/G/love2dproj/loveTCG/main.lua",
+		"/G/love2dproj/loveTCG/cls/menu.lua",
+		"/G/love2dproj/loveTCG/scenes/result_scene.lua",
+		"/G/love2dproj/loveTCG/cls/button.lua",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/G/love2dproj/loveTCG/scenes/game_scene.lua",
+		"/G/love2dproj/loveTCG/res/assets/cardbackgold.png",
+		"/G/love2dproj/loveTCG/cls/show.lua",
+		"/G/love2dproj/loveTCG/cls/bg.lua",
+		"/G/love2dproj/loveTCG/scenes/shopSCENE.lua",
+		"/G/love2dproj/loveTCG/cardLibs/skirmishLib.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/prosperity/vintner.lua",
+		"/G/love2dproj/loveTCG/cls/turn.lua",
+		"/G/love2dproj/loveTCG/cardLibs/default.lua",
+		"/G/love2dproj/loveTCG/cls/builder.lua",
+		"/G/love2dproj/loveTCG/cls/text.lua",
+		"/G/love2dproj/loveTCG/cls/starter.lua",
+		"/G/love2dproj/loveTCG/cls/collection.lua",
+		"/G/love2dproj/loveTCG/cards/vespitole/prosperity/wealthypatron.lua",
+		"/E/NARUTO SHIPPUDEN Ultimate Ninja STORM 4/火影忍者究极风暴4.xpadderprofile",
+		"/G/love2dproj/loveTCG/cls/play.lua",
+		"/G/love2dproj/loveTCG/cls/deck.lua",
+		"/G/love2dproj/loveTCG/scenes/test.lua"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"system",
+			"onFoeAttack",
+			"self",
+			"onAnyAttack",
+			"feedall",
+			"userturn",
+			"game over",
+			"shop",
+			"starter",
+			"effect(",
+			"effect",
+			"turnb",
+			"killcard",
+			"print",
+			"game",
+			"race",
+			"lost",
+			"deck",
+			"hand",
+			"game",
+			"size",
+			"deck",
+			"discrip",
+			"cancel",
+			"%platform%",
+			"v",
+			"img",
+			"%platform%",
+			")\n",
+			"\"()",
+			"initialize",
+			"game",
+			"gamestate",
+			"print",
+			"10",
+			"scale",
+			"100",
+			"print",
+			"post",
+			"pos",
+			"confirm",
+			"print",
+			"self.ip",
+			"splite",
+			"print",
+			"msg",
+			"print",
+			"data",
+			"e.",
+			"ai",
+			"joint",
+			"start",
+			"ai",
+			"	{\"",
+			"{\"",
+			" {\"",
+			"{\"",
+			"ai.",
+			"sub",
+			"refillbank",
+			"card.where",
+			"show.",
+			"default",
+			"defaut",
+			"frame.upper.hand.defautCardX",
+			"defaut",
+			"losernd",
+			"print",
+			"you",
+			"discard",
+			"lastch",
+			"onDie",
+			"discard",
+			"input",
+			"print",
+			"frame.you",
+			"herodw",
+			"where",
+			"attackweak",
+			"shield",
+			"refillba",
+			"sheph",
+			"sh",
+			"bank.refill",
+			"\"onTurnStart\",a.heroDraw",
+			"rnd=",
+			"self.hero",
+			"self",
+			"recode",
+			"reset",
+			"ab.actionMove",
+			"actionMove",
+			"attackcan",
+			"lower",
+			"hp=100",
+			"#weakest==1",
+			":",
+			"：",
+			"cardplay",
+			"getRnd",
+			"size",
+			"insertd",
+			"reset",
+			"print",
+			"test",
+			"cards",
+			"print",
+			"card[i]",
+			"v[i]",
+			"mark",
+			"\"持续\"",
+			"lua",
+			"drawcard",
+			"print",
+			"losemoney",
+			"frame.heroDraw",
+			"draw3",
+			"a.draw3",
+			"draw3",
+			"reset",
+			":",
+			"belongTo",
+			"frame.me",
+			"frame.self",
+			",\"onPlay\",a.reUse",
+			"print",
+			"card",
+			"print"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"engine",
+			"game",
+			"userside",
+			"info",
+			"shop",
+			"Effect(self,",
+			"self",
+			"faction",
+			"lose",
+			"show",
+			"play",
+			"self",
+			"scale",
+			"hand",
+			"descrip",
+			"shield",
+			"d3d",
+			"https://draihvow2bzoy.cloudfront.net/static/img",
+			"d3d",
+			"state",
+			"zoom",
+			"needConfirm",
+			"cmd",
+			"info",
+			"deckEditor.",
+			"",
+			"	{1,\"",
+			"{\"1\",\"",
+			"delay.",
+			"card.belongTo",
+			"default",
+			"me",
+			"onDiscard",
+			"op",
+			"\"onTurnOver\",a.heroDraw",
+			"me.hero",
+			"me",
+			"record",
+			"frame.ab.actionMove",
+			"ab.actionMove",
+			"me",
+			"weakest.hp=100",
+			".",
+			"cards[i]",
+			"unpack(v[i])",
+			"make",
+			"\"状态\"",
+			"a.heroDraw",
+			"frame.heroDraw",
+			"where",
+			"card.belongTo",
+			"card",
+			"",
+			"frame",
+			"lower",
+			"card:",
+			".",
+			".you",
+			":attack",
+			"onSlaught",
+			"green",
+			"upper",
+			"",
+			"绿",
+			"\"green\"",
+			"green",
+			"upper",
+			"绿",
+			"nil",
+			"",
+			"hero",
+			"hand",
+			"field",
+			"deck",
+			"bank",
+			"cards",
+			"upper.",
+			"deck",
+			"hero",
+			"hand",
+			"field",
+			"bank",
+			"lower.",
+			"upper",
+			"lower",
+			"upper"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"auto_name": "main.lua",
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "engine/init.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "data.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
+							]
+						],
+						"settings":
+						{
+							"auto_name": "data.lua",
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"spell_check": false,
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "engine/component/sprite.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1098,
+								1098
+							]
+						],
+						"settings":
+						{
+							"auto_name": "sprite.lua",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "engine/component/translate.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								684,
+								684
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 81.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "engine/component/gameobject.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								981,
+								981
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "engine/component/scene.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 125.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Lua Love/LuaLove.sublime-build",
+	"project": "1.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
