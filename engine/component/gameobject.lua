@@ -32,8 +32,8 @@ function go:init(parent,scene,data)
 
 	self.children = {}
 
-	for i, cdata in ipairs(data.children) do
-		self.children[i] =  Go(self,self.scene,cdata)
+	for i, childName in ipairs(data.children) do
+		self.children[i] =  Go(self,self.scene,self.scene.factory[childName])
 	end
 
 	self:setCallbacks()

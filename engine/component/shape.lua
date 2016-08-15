@@ -35,7 +35,6 @@ function shape:circle(data)
 	self.canvas = love.graphics.newCanvas(w,h)
 	love.graphics.setCanvas(self.canvas)
 	love.graphics.setColor(self.color)
-	love.graphics.rectangle(self.drawtype,0,0,w,h)
 	love.graphics.circle(self.drawtype, r, r, r)
 	love.graphics.setCanvas()
 

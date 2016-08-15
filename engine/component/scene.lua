@@ -4,15 +4,18 @@ local Go = require "engine/component/gameobject"
 function scene:init(core,data)
 	self.core = core
 	self.name = data.name
+	
+	self.factory = {}
+	for i,v in ipairs(data.factory) do
+		self.factory[v.name] = v
+	end
+
 	self.entity = {}
 	for i,v in ipairs(data.entity) do
 		self[v.name] = Go(nil,self,v)
 		self.entity[i] = self[v.name]
 	end
-	self.factory = {}
-	for i,v in ipairs(data.factory) do
-		self.factory[v.name] = v
-	end
+	
 
 	self:setCallbacks()
 end
