@@ -17,8 +17,8 @@ local project = {
 				{
 					name = "test2.go",
 					component = {
-						{name = "pos" , ctype = "translate" ,drawtype = "fill" , x = 300, y = 300 , z = 0, r = 0, sx = 1 , sy = 1 ,sx = 0 , sy = 0},
-						{name = "ani", ctype = "sprite", path = "res/ball.png" , imageName = "ball", offx = 0 , offy = 0 , z= 0 , tint = {0,255,0,255},anchor="center"},
+						{name = "pos" , ctype = "translate" ,drawtype = "fill" , x = 300, y = 300 , z = -1, r = 0, sx = 1 , sy = 1 ,sx = 0 , sy = 0},
+						{name = "static", ctype = "sprite", path = "res/ball.png" , imageName = "ball", offx = 0 , offy = 0 , z= 0 , tint = {0,255,0,255},anchor="center"},
 						{name = "roll", ctype = "script", path = "res/action" , test = 10}
 					},
 					children = {
@@ -30,7 +30,7 @@ local project = {
 				{
 					name = "test3.go",
 					component = {
-						{name = "pos" , ctype = "translate" , x = 0, y = 100 , z = 0, r = 0, sx = 1 , sy = 1 ,sx = 0 , sy = 0},
+						{name = "pos" , ctype = "translate" , x = 50, y = 50 , z = 0, r = 0, sx = 1 , sy = 1 ,sx = 0 , sy = 0},
 						{name = "draw", ctype = "shape", shapetype = "circle" , drawtype = "line" ,x = 0 , y = 0 ,r = 100, color = {255,0,255,255},anchor="center"}
 					},
 					children = {}

@@ -2,9 +2,10 @@ local script = Class ("script")
 
 
 function script:init(go,data)
+	self.ctype = "script"
 	self.go = go
 	self.core = go.core
-	self.name = data.name
+	self.name = data.name or "unnamed "..self.ctype
 	self.scr = require(data.path)
 	
 	for k,v in pairs(data) do

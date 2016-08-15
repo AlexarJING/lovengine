@@ -2,11 +2,12 @@ local shape = Class("shape")
 
 
 function shape:init(go,data)
-
+	self.ctype = "shape"
 	self.go = go
-	self.shapetype = data.shapetype 
-	self.color = {unpack(data.color)}
-	self.drawtype = data.drawtype
+	self.name = data.name or "unnamed "..self.ctype
+	self.shapetype = data.shapetype
+	self.color = data.color and {unpack(data.color)} or {255,255,255,255}
+	self.drawtype = data.drawtype or "line"
 	self.offx = data.offx or 0
 	self.offy = data.offy or 0
 	self.rot = data.rot or 0

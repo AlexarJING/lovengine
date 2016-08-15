@@ -9,4 +9,4 @@ Go = require "engine/component/gameobject"
 Scene = require "engine/component/scene"
 Engine = require "engine/component/core"
 
-Engine()
+return Engine()

@@ -13,7 +13,7 @@ function go:init(parent,scene,data)
 	self.shapes = {}
 	self.sprites = {}
 
-	for i,cdata in ipairs(data.component) do
+	for i,cdata in ipairs(data.component or {}) do
 		local com 
 		if cdata.ctype == "translate"  then
 			self.translate = Translate(self,cdata)
@@ -32,8 +32,10 @@ function go:init(parent,scene,data)
 
 	self.children = {}
 
-	for i, childName in ipairs(data.children) do
-		self.children[i] =  Go(self,self.scene,self.scene.factory[childName])
+	for i, childName in ipairs(data.children or {}) do
+		local go = Go(self,self.scene,self.scene.factory[childName])
+		self.scene:addEntity(go)
+		go.translate:setParent(self)
 	end
 
 	self:setCallbacks()
@@ -62,13 +64,33 @@ function go:setCallbacks()
 			for i,cb in ipairs(self.allcb[callback]) do
 				cb(go,...)
 			end
+			--[[
 			for i,child in ipairs(self.children) do
 				if child[callback] then child[callback](child,...) end
-			end
+			end]]
 		end
 	end
 end
 
+function go:addComponent(com)
+	if com.ctype == "translate"  then
+		self.translate = com
+	elseif com.ctype == "shape" then
+		table.insert(self.shapes, com)
+	elseif com.ctype == "sprite" then
+		table.insert(self.sprites, com)
+	elseif com.ctype == "script" then
+		self.script = com
+	end
+
+	for _,callback in ipairs(all_callbacks) do	
+
+		if com[callback] then
+			table.insert(self.allcb[callback], com[callback])
+		end	
+	end
+	table.insert(self.component,com)
+end
 
 function go:update(dt)
 	if self.script then self.script.update(self,dt) end
@@ -79,9 +101,6 @@ function go:update(dt)
 		end
 	end
 
-	for i,child in ipairs(self.children) do
-		child:update(dt)
-	end
 end
 
 
@@ -96,11 +115,11 @@ function go:draw()
 	for i,v in ipairs(self.shapes) do
 		v:draw()
 	end
-
+	--[[
 	for i,v in ipairs(self.children) do
 		v:draw()
 	end
-
+]]
 	love.graphics.pop()
 end
 

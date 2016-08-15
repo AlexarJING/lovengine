@@ -11,7 +11,7 @@
 local animation=Class("ani")
 
 
-function animation:initialize(img,fx,fy,w,h,offx,offy,lx,ly,delay,count) 
+function animation:init(img,fx,fy,w,h,offx,offy,lx,ly,delay,count) 
 
 	self.img=img
 	local sw,sh= img:getDimensions()
@@ -37,6 +37,7 @@ function animation:initialize(img,fx,fy,w,h,offx,offy,lx,ly,delay,count)
 	self.timer=0
 	self.delay=delay
 	self.frame=self.frames[self.currentFrame]
+	return self
 end
 
 
@@ -49,7 +50,6 @@ function animation:stop()
 end
 
 function animation:update(dt)
-	local frame=self.frames[self.currentFrame]
 	if self.isPlay then
 		self.timer=self.timer+dt
 		if self.timer>=self.delay then
@@ -84,10 +84,10 @@ function animation:update(dt)
 
 		end
 	end
-	self.frame=frame
+	self.frame=self.frames[self.currentFrame]
 end
 
-function animation:draw(x,y,rot,scaleX,scaleY,offx,offy)
+function animation:draw(x,y,rot,scaleX,scaleY)
 	x = x or 0
 	y = y or 0
 	rot = rot or 0 
@@ -95,7 +95,7 @@ function animation:draw(x,y,rot,scaleX,scaleY,offx,offy)
 	scaleY = scaleY or 1
 	offx = offx or 0
 	offy = offy or 0
-	love.graphics.draw(self.img,self.frame, x+offx,y+offy,rot ,scaleX ,scaleY,self.frameWidth/2,self.frameHeight/2)
+	love.graphics.draw(self.img,self.frame, x, y,rot ,scaleX ,scaleY,self.frameWidth/2,self.frameHeight/2)
 end
 
 love.graphics.newAnimation=animation

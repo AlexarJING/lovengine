@@ -2,6 +2,8 @@ local translate = Class("translate")
 
 
 function translate:init(go,data)
+	self.ctype = "translate"
+	self.name = data.name or "unnamed "..self.ctype
 	self.go = go
 	self.x = data.x or 0
 	self.y = data.y or 0
@@ -14,8 +16,15 @@ end
 
 
 function translate:rotate(rot,ax,ay)
+
 	ax = ax  or 0
 	ay = ay  or 0
+	
+	if self.parent then
+		ax = ax + self.parent.x
+		ay = ay + self.parent.y
+	end
+
 	self.x= self.x - ax
   	self.y= self.y - ay
   	local xx=math.cos(rot) * self.x - math.sin(rot)* self.y
@@ -24,10 +33,22 @@ function translate:rotate(rot,ax,ay)
   	self.y = yy + ay
 end
 
+local function applyAll(obj)
+	if obj.parent then
+		applyAll(obj.parent)
+	end
+	love.graphics.translate(obj.x, obj.y)
+	love.graphics.rotate(obj.rotation)
+	love.graphics.scale(obj.scaleX, obj.scaleY)
+end
+
+
 function translate:apply()
-	love.graphics.translate(self.x, self.y)
-	love.graphics.rotate(self.rotation)
-	love.graphics.scale(self.scaleX, self.scaleY)
+	applyAll(self)
+end
+
+function translate:setParent(go)
+	self.parent = go.translate
 end
 
 return translate

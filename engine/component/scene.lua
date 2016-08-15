@@ -4,7 +4,7 @@ local Go = require "engine/component/gameobject"
 function scene:init(core,data)
 	self.core = core
 	self.name = data.name
-	
+
 	self.factory = {}
 	for i,v in ipairs(data.factory) do
 		self.factory[v.name] = v
@@ -13,7 +13,7 @@ function scene:init(core,data)
 	self.entity = {}
 	for i,v in ipairs(data.entity) do
 		self[v.name] = Go(nil,self,v)
-		self.entity[i] = self[v.name]
+		table.insert(self.entity,self[v.name])
 	end
 	
 
@@ -40,7 +40,25 @@ function scene:setCallbacks()
 			end
 		end
 	end
+
+	self._draw = self.draw
+
+	self.draw = function(...)
+		self:drawOrder()
+		self:_draw(...)
+	end
 end
 
+function scene:addEntity(go)
+	table.insert(self.entity, go)
+end
+
+
+function scene:drawOrder()
+	table.sort( self.entity, 
+		function(a,b)  
+			return a.translate.z < b.translate.z
+		end)
+end
 
 return scene
