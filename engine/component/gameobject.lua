@@ -92,6 +92,10 @@ function go:addComponent(com)
 	table.insert(self.component,com)
 end
 
+function go:addChild(child)
+	child.translate:setParent(self)
+end
+
 function go:update(dt)
 	if self.script then self.script.update(self,dt) end
 

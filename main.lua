@@ -14,3 +14,6 @@ go:addComponent(Sprite(go,
 		
 scene:addEntity(go)
 
+local go2 = Go(go, scene, scene.factory["test3.go"])
+go:addChild(go2)
+scene:addEntity(go2)
