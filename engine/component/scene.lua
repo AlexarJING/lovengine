@@ -7,7 +7,7 @@ function scene:init(core,data)
 	self.entity = {}
 	for i,v in ipairs(data.entity) do
 		self[v.name] = Go(nil,self,v)
-		self.entity[i] = self[v.id]
+		self.entity[i] = self[v.name]
 	end
 	self.factory = {}
 	for i,v in ipairs(data.factory) do

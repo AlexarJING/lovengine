@@ -1,14 +1,17 @@
-local shape = Clas("shape")
+local shape = Class("shape")
 
 
 function shape:init(go,data)
+
+	self.go = go
 	self.shapetype = data.shapetype 
-	self[self.shapetype](data)
+	self.color = {unpack(data.color)}
+	self.drawtype = data.drawtype
 	self.offx = data.offx or 0
 	self.offy = data.offy or 0
 	self.rot = data.rot or 0
-	self.drawtype = data.drawtype
-	self.color = {unpack(data.color)}
+	self[self.shapetype](self,data)
+	
 end
 
 function shape:rectangle(data)
@@ -40,6 +43,7 @@ end
 
 
 function shape:draw()
+	love.graphics.setColor(255,255,255,255)
 	love.graphics.draw(self.canvas, self.offx,self.offy,self.rot,1,1,self.width/2,self.height/2)
 end
 

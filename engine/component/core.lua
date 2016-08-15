@@ -14,14 +14,16 @@ local _love = {}
 
 function engine:init()
 	self.data = require "data"
+	self.resource = {}
 	self.scenes = {}
 	for name, sceneData in pairs(self.data.scene) do
 		self.scenes[name] = Scene(self,sceneData)
 	end
 
-	self.currentScene = self.data.entry
+	self.currentScene = self.scenes[self.data.entry]
+	
+
 	self:setCallbacks()
-	self.resource = {}
 end
 
 local newFunc= {
@@ -34,7 +36,8 @@ function engine:require(path,rType)
 	if self.resource[path] then 
 		return self.resource[path]
 	else
-		return newFunc[rType]
+		self.resource[path] = newFunc[rType](path)
+		return self.resource[path]
 	end
 end
 
@@ -43,6 +46,7 @@ function engine:setCallbacks()
 		_love[event] = love[event]
 		love[event] = function(...)
 			local func = self.currentScene[event]
+			--print(self.currentScene,event,func)
 			if func then
 				func(self.currentScene,...)
 			end

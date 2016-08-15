@@ -8,6 +8,7 @@ function sprite:init(go,data)
 	self.offx = data.offx
 	self.offy = data.offy
 	self.rot = data.rot
+	self.tint = {unpack(data.tint)}
 
 	if data.imageName then
 		self.image = self.core:require(data.path,"image")
@@ -27,8 +28,7 @@ function sprite:init(go,data)
 	else
 
 	end
-	self.image = data.imagename and love.graphics.newImage(data.imagename)
-	self.animation = data.animationname and love.graphics.newAnimation() --img,fx,fy,w,h,offx,offy,lx,ly,delay,count
+
 end
 
 function sprite:update(dt)
@@ -39,6 +39,7 @@ end
 
 
 function sprite:draw()
+	love.graphics.setColor(self.tint)
 	if self.animation then
 		self.animation:draw(_,_,_,_,self.offx,self.offy)
 	else
