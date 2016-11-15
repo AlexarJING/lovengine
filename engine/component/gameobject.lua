@@ -1,14 +1,15 @@
 local go = Class("Game Object")
 
 
-function go:init(parent,scene,data)
+function go:init(scene,data,parent)
 	
 	self.parent = parent
 	self.scene = scene
+	scene:addEntity(self)
 	self.core = scene.core
-	self.name = data.name
+	data = data or {}
+	self.name = data.name or "unnamed GO#"..#scene.entity
 	self.component = {}
-
 
 	self.shapes = {}
 	self.sprites = {}
@@ -26,17 +27,28 @@ function go:init(parent,scene,data)
 		elseif cdata.ctype == "script" then
 			com = Script(self,cdata)
 			self.script = com
+		elseif cdata.ctype == "box2d" then
+			com = Box2d(self,cdata)
+			self.box2d = com
 		end
 		table.insert(self.component,com)
 	end
+	if self.script and self.script.load then
+		self.script.load(self)
+	end
+
+	if not self.translate  then self.translate = Translate(self,{}) end
+	
+	if self.box2d then self.box2d:bind() end
 
 	self.children = {}
 
 	for i, childName in ipairs(data.children or {}) do
-		local go = Go(self,self.scene,self.scene.factory[childName])
+		local go = Go(self.scene,self.scene.factory[childName],self)
 		self.scene:addEntity(go)
 		go.translate:setParent(self)
 	end
+
 
 	self:setCallbacks()
 end
@@ -46,7 +58,7 @@ local all_callbacks = {
 	'mousepressed', 'mousereleased','textinput',"textedited",
 	'gamepadaxis', 'gamepadpressed',
 	'gamepadreleased', 'joystickaxis', 'joystickhat',
-	'joystickpressed', 'joystickreleased'
+	'joystickpressed', 'joystickreleased',"keydown"
 }
 
 function go:setCallbacks()
@@ -72,6 +84,8 @@ function go:setCallbacks()
 	end
 end
 
+
+
 function go:addComponent(com)
 	if com.ctype == "translate"  then
 		self.translate = com
@@ -81,7 +95,11 @@ function go:addComponent(com)
 		table.insert(self.sprites, com)
 	elseif com.ctype == "script" then
 		self.script = com
+	elseif com.ctype == "box2d" then
+		self.box2d = com
 	end
+
+	if self.box2d then self.box2d:bind() end
 
 	for _,callback in ipairs(all_callbacks) do	
 
@@ -93,14 +111,22 @@ function go:addComponent(com)
 end
 
 function go:addChild(child)
-	child.translate:setParent(self)
+	child.parent = self
+	table.insert(self.children, child)
+end
+
+function go:independent()
+	table.removeItem(self.parent.children,self)
+	self.parent = nil
 end
 
 function go:update(dt)
-	if self.script then self.script.update(self,dt) end
+	if self.box2d then self.box2d:synchronize() end
+
+	if self.script and self.script.update then self.script.update(self,dt) end
 
 	for i,com in ipairs(self.component) do
-		if com.update and com~= self.script then
+		if com.update and not com.special  then
 			com:update(dt)
 		end
 	end
@@ -113,12 +139,14 @@ function go:draw()
 	love.graphics.push()
 	self.translate:apply()
 
-	for i,v in ipairs(self.sprites) do
-		v:draw()
-	end
 	for i,v in ipairs(self.shapes) do
 		v:draw()
 	end
+
+	for i,v in ipairs(self.sprites) do
+		v:draw()
+	end
+	
 	--[[
 	for i,v in ipairs(self.children) do
 		v:draw()

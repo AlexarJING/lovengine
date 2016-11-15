@@ -6,19 +6,17 @@ function script:init(go,data)
 	self.go = go
 	self.core = go.core
 	self.name = data.name or "unnamed "..self.ctype
-	self.scr = require(data.path)
-	
-	for k,v in pairs(data) do
-		self.scr[k] = v
+	self.special = true
+	self.love = love
+	self.print = print
+	for k,v in pairs(data.parameter or {}) do
+		self[k] = v
 	end
 
-	for k,v in pairs(self.scr) do
-		if type(v) == "function" then
-			self[k] = function(...)
-				v(...)
-			end
-		end
-	end
+	local func = loadstring(love.filesystem.read(data.path))
+	setfenv(func, self)
+	func()
+	--pcall(self.load,self.go)
 end
 
 return script

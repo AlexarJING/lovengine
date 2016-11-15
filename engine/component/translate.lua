@@ -5,6 +5,8 @@ function translate:init(go,data)
 	self.ctype = "translate"
 	self.name = data.name or "unnamed "..self.ctype
 	self.go = go
+	self.special = true
+	
 	self.x = data.x or 0
 	self.y = data.y or 0
 	self.z = data.z or 0
@@ -34,8 +36,8 @@ function translate:rotate(rot,ax,ay)
 end
 
 local function applyAll(obj)
-	if obj.parent then
-		applyAll(obj.parent)
+	if obj.go.parent then
+		applyAll(obj.go.parent.translate)
 	end
 	love.graphics.translate(obj.x, obj.y)
 	love.graphics.rotate(obj.rotation)

@@ -6,21 +6,24 @@ local all_callbacks = {
 	'mousepressed', 'mousereleased', 'quit', 'resize', 'textinput',"textedited",
 	'threaderror', 'update', 'visible', 'gamepadaxis', 'gamepadpressed',
 	'gamepadreleased', 'joystickadded', 'joystickaxis', 'joystickhat',
-	'joystickpressed', 'joystickreleased', 'joystickremoved'
+	'joystickpressed', 'joystickreleased', 'joystickremoved',"keydown"
 }
 
 
 local _love = {}
 
-function engine:init()
-	self.data = require "data"
+function engine:init(path)
+	self.data = loadstring(love.filesystem.read(path))()
+	love.window.setTitle(self.data.name or "untitled")
+	success = love.window.setMode(self.data.width or 800,self.data.height or 600)
+
 	self.resource = {}
 	self.scenes = {}
-	for name, sceneData in pairs(self.data.scene) do
+	for name, sceneData in pairs(self.data.scene or {}) do
 		self.scenes[name] = Scene(self,sceneData)
 	end
 
-	self.currentScene = self.scenes[self.data.entry]
+	self.currentScene = self.scenes[self.data.entry] or {}
 	
 
 	self:setCallbacks()

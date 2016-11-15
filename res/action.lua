@@ -1,12 +1,10 @@
-local action = {}
-
-function action.update(go,dt)
-	go.translate.rotation = go.translate.rotation + dt* action.test
+function update(go,dt)
+	go.translate.rotation = go.translate.rotation + dt * test
 end
 
-function action.keypressed(go,key)
+function keypressed(go,key)
 	if key == "space" then
-		action.test = - action.test
+		test = - test
 	end
 end
-return action 
+ 

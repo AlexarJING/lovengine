@@ -1,4 +1,4 @@
----by alexar, Class (Class= require "middleclass") is need 
+---by alexar, Class (Class= require "middleclass") is a need 
 ---用法：img保存动画的image对象 fx,fy,lx,ly 动画第一像素和最后一个像素位置不包含外框
 ---offx,offy 动画图片间距
 ---delay 动画延时 
